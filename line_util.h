@@ -1,6 +1,6 @@
 // CS4 Graphics Practical 1
 //
-// Bruce Cran <brucec@dcs.ed.ac.uk>
+// Rebecca Cran <brucec@dcs.ed.ac.uk>
 
 // This is my implementation of the classis bresenham algorithm.
 // The simple midpoint algorithm code has been optimized to remove

@@ -1,5 +1,5 @@
 // CS4 Graphics Practical 2
-// Bruce Cran <s9905155@inf.ed.ac.uk>
+// Rebecca Cran <s9905155@inf.ed.ac.uk>
 //
 
 #include <stdio.h>

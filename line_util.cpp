@@ -1,6 +1,6 @@
 // Computer Science 4:  Computer Graphics
 //
-// Bruce Cran, brucec@dcs.ed.ac.uk
+// Rebecca Cran, brucec@dcs.ed.ac.uk
 //
 // This is a line-drawing program utilising the Simple Raster Graphics Package, SRGP
 // It demonstates both the famous Bresenham line-drawing algorithm and the less well-known Wu's method of anti-aliasing lines drawn using Bresenham's algorithm
@@ -535,8 +535,8 @@ void drawPolygon(point points[3], int color)
 	points[0].y = WINDOW_HEIGHT - points[0].y;
 	points[1].y = WINDOW_HEIGHT - points[1].y;
 	points[2].y = WINDOW_HEIGHT - points[2].y;
-	Sint16 x[3] = {points[0].x, points[1].x, points[2].x};
-	Sint16 y[3] = {points[0].y, points[1].y, points[2].y};
+	Sint16 x[3] = {static_cast<Sint16>(points[0].x), static_cast<Sint16>(points[1].x), static_cast<Sint16>(points[2].x)};
+	Sint16 y[3] = {static_cast<Sint16>(points[0].y), static_cast<Sint16>(points[1].y), static_cast<Sint16>(points[2].y)};
 	filledPolygonColor(back_buffer, x, y, 3, color);
 }
 

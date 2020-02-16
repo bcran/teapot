@@ -1,12 +1,12 @@
 PREFIX = /usr/local
 CC ?= gcc
 LD ?= ld
-CFLAGS += -I/usr/local/include/SDL11 -I/usr/local/lib/SDL11 -I/usr/X11R6/include -L/usr/local/lib
-LIBS = -lSDL-1.1 -lstdc++ -lc -lSDL_gfx
+CFLAGS += -I/usr/local/include/SDL
+LIBS = -L/usr/local/lib -lSDL -lSDL_gfx -lstdc++ -lc -lm
 SOURCES = line_util.cpp manip.cpp render.cpp file_parser.cpp bezier.cpp
 MAN = fp.8
 PROG = fp
-MAINTAINER = Bruce Cran <bruce@cran.org.uk>
+MAINTAINER = Rebecca Cran <rebecca@bsdio.com>
 
 all:	fp
 
